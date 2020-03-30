@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  width: 100%;
+  font-size: 14px;
+  background-color: burlywood;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.correct {
+  background-color: #289a27;
+}
+
+.incorrect {
+  background-color: #c41a21;
+}
+
+.buttons {
+  padding: 10px 10px 10px 0;
+  margin: 30px;
+}
+form{
+  margin-left: 50px;
+  margin-right:50px;
+  margin-top: 50px;
+}
+.main-container{
+  padding: 10px;
+  margin: 10px auto;
+}
+.right-side{
+  text-align: center;
+}
+
+.side-bar-contact-element{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 15px;
+}
+
+.stopka{
+  position: absolute;
+  background-color: #303030;
+  color: #FFF;
+  height: 2.5rem;
+  padding: 10px;
+  text-align: center;
+  width:100%;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+}
+
+navbar{
+  margin: 0;
+  padding: 0;
+  background-color: burlywood;
+}
