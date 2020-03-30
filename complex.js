@@ -1,28 +1,28 @@
-var Complex = /** @class */ (function () {
-    function Complex(real, imaginary) {
+"use strict";
+class Complex {
+    constructor(real, imaginary) {
         this.real = real;
         this.imaginary = imaginary;
     }
-    Complex.prototype.add = function (obj) {
+    add(obj) {
         return new Complex(this.real + obj.real, this.imaginary + obj.imaginary);
-    };
-    Complex.prototype.sub = function (obj) {
+    }
+    sub(obj) {
         return new Complex(this.real - obj.real, this.imaginary - obj.imaginary);
-    };
-    Complex.prototype.mod = function () {
-        var real = Math.pow(this.real, 2);
-        var imaginary = Math.pow(this.imaginary, 2);
+    }
+    mod() {
+        let real = Math.pow(this.real, 2);
+        let imaginary = Math.pow(this.imaginary, 2);
         return (Math.sqrt(real + imaginary));
-    };
-    Complex.prototype.toString = function () {
+    }
+    toString() {
         console.log('Real: ', this.real, 'Imaginary: ' + this.imaginary);
-    };
-    return Complex;
-}());
-var a = new Complex(3, 2);
-var b = new Complex(8, 4);
-var c = a.add(b);
+    }
+}
+let a = new Complex(3, 2);
+let b = new Complex(8, 4);
+let c = a.add(b);
 c.toString();
-var d = c.sub(a);
+let d = c.sub(a);
 d.toString();
 console.log(d.mod());
