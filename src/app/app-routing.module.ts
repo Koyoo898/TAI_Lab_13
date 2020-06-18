@@ -12,7 +12,7 @@ import {SignupComponent} from './components/signup/signup.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
 
   },

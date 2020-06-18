@@ -10,14 +10,15 @@ import {Router} from '@angular/router';
 export class NavbarComponent implements OnInit {
 
 
-  constructor(public authService: AuthService, public router: Router) {
+  constructor(public authService: AuthService, private router: Router) {
   }
 
   logOut() {
-    this.authService.logout().subscribe(() => {
+    return this.authService.logout().subscribe((response) => {
       this.router.navigate(['/']);
     });
   }
+
 
 
 
